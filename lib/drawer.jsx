@@ -193,7 +193,7 @@ export default class Drawer extends React.Component {
             this.props
           );
 
-          let computedStyle = assign(drawer, drawerStyle);
+          let computedStyle = assign(drawerStyle, drawer);
           if (interpolated.myProp > 0) computedStyle.display = "block";
           else computedStyle.display = "none";
 
